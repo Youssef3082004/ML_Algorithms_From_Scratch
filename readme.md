@@ -1,6 +1,6 @@
 # Machine Learning Algorithms From Scratch
 
-A growing collection of fundamental Machine Learning algorithms implemented completely from scratch using Python and `numpy`. This repository serves as an educational resource to understand the inner workings of various ML models without relying on high-level frameworks like scikit-learn for the core logic.
+A growing collection of fundamental Machine Learning algorithms implemented completely from scratch using **`Python`** and **`numpy`**. This repository serves as an educational resource to understand the inner workings of various ML models without relying on high-level frameworks like scikit-learn for the core logic.
 
 ## 📑 Table of Contents
 - [Machine Learning Algorithms From Scratch](#machine-learning-algorithms-from-scratch)
@@ -11,9 +11,6 @@ A growing collection of fundamental Machine Learning algorithms implemented comp
   - [🛠️ Utilities \& Metrics](#️-utilities--metrics)
   - [📂 Project Structure](#-project-structure)
   - [⚙️ Installation](#️-installation)
-  - [🚀 Usage Examples](#-usage-examples)
-    - [Classification (e.g., KNN)](#classification-eg-knn)
-    - [Regression (e.g., Linear Regression)](#regression-eg-linear-regression)
   - [🗺️ Roadmap](#️-roadmap)
 
 ## 🧠 Implemented Algorithms
@@ -23,6 +20,7 @@ The repository is organized by machine learning categories. As new algorithms ar
 ### Supervised Learning
 **Classification**
 - [x] **K-Nearest Neighbors (KNN)**: Custom implementation using Euclidean distance to find the *k* closest data points.
+- [x] **Logistic Regression**: Custom implementation using Gradient Descent with *sigmoid activation Function*. Supports binary classification with customizable learning rate and iterations.
 
 **Regression**
 - [x] **Linear Regression**: Implemented via Gradient Descent with customizable learning rates and epochs. Includes a built-in visualization script.
@@ -48,7 +46,8 @@ ML_Algorithms_From_Scratch/
 │   └── Evaluation.py          
 │
 ├── KNN.py                     # Algorithm implementations 
-├── LinearRegression.py        
+├── LinearRegression.py 
+├── LogisticRegression.py        
 └── ...
 
 ```
@@ -57,9 +56,8 @@ ML_Algorithms_From_Scratch/
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/Youssef3082004/ML_Algorithms_From_Scratch.git](https://github.com/Youssef3082004/ML_Algorithms_From_Scratch.git)
+git clone https://github.com/Youssef3082004 ML_Algorithms_From_Scratch.git
 cd ML_Algorithms_From_Scratch
-
 ```
 
 
@@ -72,39 +70,7 @@ pip install numpy matplotlib scikit-learn
 
 *(Note: `scikit-learn` is only used to generate dummy datasets for testing).*
 
-## 🚀 Usage Examples
 
-All algorithms share a consistent, scikit-learn-style API (`.fit()` and `.predict()`), making it simple to swap models in and out.
-
-### Classification (e.g., KNN)
-
-```python
-from KNN import KNN
-
-# Initialize and fit
-model = KNN(k=5)
-model.fit(X_train, y_train)
-
-# Predict
-predictions = model.predict(X_test)
-
-```
-
-### Regression (e.g., Linear Regression)
-
-```python
-from LinearRegression import LinearRegression
-
-# Initialize and fit
-regressor = LinearRegression(Learning_rate=0.01, iterations=1000)
-regressor.fit(X_train, y_train)
-
-# Predict
-predictions = regressor.predict(X_test)
-
-```
-
-*(Run `python LinearRegression.py` directly to see a demonstration and a matplotlib visualization of the regression line).*
 
 ## 🗺️ Roadmap
 
@@ -113,7 +79,7 @@ Future updates will expand the repository with more algorithms. Planned addition
 
 * [x] K Nearest Neighbors
 * [x] Linear Regression
-* [ ] Logistic Regression
+* [x] Logistic Regression
 * [ ] Naive Bayes
 * [ ] Perceptron
 * [ ] SVM
