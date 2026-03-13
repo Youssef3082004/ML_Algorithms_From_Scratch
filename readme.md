@@ -22,6 +22,7 @@ The repository is organized by machine learning categories. As new algorithms ar
 - [x] **K-Nearest Neighbors (KNN)**: Custom implementation using Euclidean distance to find the *k* closest data points.
 - [x] **Logistic Regression**: Custom implementation using Gradient Descent with *sigmoid activation Function*. Supports binary classification with customizable learning rate and iterations.
 - [x] **Adaline (Adaptive Linear Neuron)**: Custom implementation using Gradient Descent with *linear activation function* for weight updates and *threshold function* for final predictions. Supports binary classification with customizable learning rate and iterations.
+- [x] **Perceptron**: Custom implementation using the Perceptron learning rule with *step activation function* for weight updates and predictions. Supports binary classification with customizable learning rate and iterations.
 
 **Regression**
 - [x] **Linear Regression**: Implemented via Gradient Descent with customizable learning rates and epochs. Includes a built-in visualization script.
@@ -49,7 +50,8 @@ ML_Algorithms_From_Scratch/
 ├── KNN.py                     # Algorithm implementations 
 ├── LinearRegression.py 
 ├── LogisticRegression.py  
-├── Adaline.py        
+├── Adaline.py
+├── Perceptron.py        
 └── ...
 
 ```
@@ -83,8 +85,8 @@ Future updates will expand the repository with more algorithms. Planned addition
 * [x] Linear Regression
 * [x] Logistic Regression
 * [x] Adaline
+* [x] Perceptron
 * [ ] Naive Bayes
-* [ ] Perceptron
 * [ ] SVM
 * [ ] Decision Tree
 * [ ] Random Forest
@@ -93,3 +95,5 @@ Future updates will expand the repository with more algorithms. Planned addition
 * [ ] AdaBoost
 * [ ] Linear Discriminant Analysis (LDA)
 
+---
+<h3 align="center">A repository of AI & ML algorithms implemented from scratch</h3>
