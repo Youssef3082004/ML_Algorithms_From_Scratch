@@ -8,6 +8,7 @@ A growing collection of fundamental Machine Learning algorithms implemented comp
   - [🧠 Implemented Algorithms](#-implemented-algorithms)
     - [Supervised Learning](#supervised-learning)
     - [Unsupervised Learning](#unsupervised-learning)
+    - [Cost Functions](#cost-functions)
   - [🛠️ Utilities \& Metrics](#️-utilities--metrics)
   - [📂 Project Structure](#-project-structure)
   - [⚙️ Installation](#️-installation)
@@ -30,6 +31,11 @@ The repository is organized by machine learning categories. As new algorithms ar
 
 ### Unsupervised Learning
 *(Algorithms coming soon)*
+
+### Cost Functions 
+- **SVM:** 
+$$J(\mathbf{w}) = \lambda ||\mathbf{w}||^2 + \frac{1}{n}\sum_{i=1}^n \max(0, 1 - y_i(\mathbf{w} \cdot \mathbf{x}_i))$$
+
 
 ## 🛠️ Utilities & Metrics
 
