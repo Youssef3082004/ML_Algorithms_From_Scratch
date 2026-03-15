@@ -23,6 +23,7 @@ The repository is organized by machine learning categories. As new algorithms ar
 - [x] **Logistic Regression**: Custom implementation using Gradient Descent with *sigmoid activation Function*. Supports binary classification with customizable learning rate and iterations.
 - [x] **Adaline (Adaptive Linear Neuron)**: Custom implementation using Gradient Descent with *linear activation function* for weight updates and *threshold function* for final predictions. Supports binary classification with customizable learning rate and iterations.
 - [x] **Perceptron**: Custom implementation using the Perceptron learning rule with *step activation function* for weight updates and predictions. Supports binary classification with customizable learning rate and iterations.
+- [x] **Support Vector Machine (SVM)**: Custom implementation using *Stochastic Gradient Descent (SGD)* optimizing the hinge loss function with L2 regularization. Supports binary classification with customizable learning rate, lambda parameter, and iterations.
 
 **Regression**
 - [x] **Linear Regression**: Implemented via Gradient Descent with customizable learning rates and epochs. Includes a built-in visualization script.
@@ -51,7 +52,8 @@ ML_Algorithms_From_Scratch/
 ├── LinearRegression.py 
 ├── LogisticRegression.py  
 ├── Adaline.py
-├── Perceptron.py        
+├── Perceptron.py  
+├── SVM.py        
 └── ...
 
 ```
@@ -86,13 +88,13 @@ Future updates will expand the repository with more algorithms. Planned addition
 * [x] Logistic Regression
 * [x] Adaline
 * [x] Perceptron
+* [x] SVM
 * [ ] Naive Bayes
-* [ ] SVM
 * [ ] Decision Tree
 * [ ] Random Forest
-* [ ] Principal Component Analysis (PCA)
-* [ ] K-Means
 * [ ] AdaBoost
+* [ ] K-Means
+* [ ] Principal Component Analysis (PCA)
 * [ ] Linear Discriminant Analysis (LDA)
 
 ---
