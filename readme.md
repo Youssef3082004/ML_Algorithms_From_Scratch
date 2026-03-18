@@ -21,10 +21,11 @@ The repository is organized by machine learning categories. As new algorithms ar
 ### Supervised Learning
 **Classification**
 - [x] **K-Nearest Neighbors (KNN)**: Custom implementation using Euclidean distance to find the *k* closest data points.
-- [x] **Logistic Regression**: Custom implementation using Gradient Descent with *sigmoid activation Function*. Supports binary classification with customizable learning rate and iterations.
+- [x] **Logistic Regression**: Custom implementation using Gradient Descent with *sigmoid activation function*. Supports binary classification with customizable learning rate and iterations.
 - [x] **Adaline (Adaptive Linear Neuron)**: Custom implementation using Gradient Descent with *linear activation function* for weight updates and *threshold function* for final predictions. Supports binary classification with customizable learning rate and iterations.
 - [x] **Perceptron**: Custom implementation using the Perceptron learning rule with *step activation function* for weight updates and predictions. Supports binary classification with customizable learning rate and iterations.
 - [x] **Support Vector Machine (SVM)**: Custom implementation using *Stochastic Gradient Descent (SGD)* optimizing the hinge loss function with L2 regularization. Supports binary classification with customizable learning rate, lambda parameter, and iterations.
+- [x] **Naive Bayes**: Custom implementation using *Bayes' theorem* with the *Gaussian likelihood* assumption for continuous features. Estimates class-conditional probabilities from training data (mean and variance per feature per class) and predicts via *Maximum A Posteriori (MAP)* estimation. Supports multi-class classification with customizable prior probabilities.
 
 **Regression**
 - [x] **Linear Regression**: Implemented via Gradient Descent with customizable learning rates and epochs. Includes a built-in visualization script.
@@ -59,7 +60,8 @@ ML_Algorithms_From_Scratch/
 ├── LogisticRegression.py  
 ├── Adaline.py
 ├── Perceptron.py  
-├── SVM.py        
+├── SVM.py 
+├── NaiveBayes.py        
 └── ...
 
 ```
@@ -95,7 +97,7 @@ Future updates will expand the repository with more algorithms. Planned addition
 * [x] Adaline
 * [x] Perceptron
 * [x] SVM
-* [ ] Naive Bayes
+* [x] Naive Bayes
 * [ ] Decision Tree
 * [ ] Random Forest
 * [ ] AdaBoost
