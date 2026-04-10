@@ -10,7 +10,7 @@ class NaiveBayes():
     def __init__(self):
         pass
 
-    def fit(self,X:np.ndarray,y:np.ndarray):
+    def fit(self,X:np.ndarray,y:np.ndarray) -> None:
         n_samples , n_features = X.shape
         self.classes = np.unique(y)
         n_classes = len(self.classes)
@@ -21,14 +21,15 @@ class NaiveBayes():
             X_c = X[y == c]
             self.mean[idx, :] = X_c.mean(axis=0)
             self.var[idx, :] = X_c.var(axis=0)
+            #! == P(Y) ==
             self.prior[idx] = X_c.shape[0] / n_samples 
 
 
-    def predict(self, X):
+    def predict(self, X:np.ndarray) -> np.ndarray:
         y_pred = [self._predict(x) for x in X]
         return np.array(y_pred)
 
-    def _predict(self, x):
+    def _predict(self, x:np.ndarray) -> np.ndarray:
         posteriors = []
 
         for idx, c in enumerate(self.classes):
@@ -39,7 +40,7 @@ class NaiveBayes():
 
         return self.classes[np.argmax(posteriors)]
 
-    def _pdf(self, class_idx, x):
+    def _pdf(self, class_idx:int, x:np.ndarray) -> float:
         mean = self.mean[class_idx]
         var = self.var[class_idx]
         numerator = np.exp(-((x - mean) ** 2) / (2 * var))
